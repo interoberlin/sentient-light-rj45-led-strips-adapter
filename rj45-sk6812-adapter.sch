@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:RJ45 J1
-U 1 1 5BD1B190
-P 3700 3100
-F 0 "J1" H 3755 3767 50  0000 C CNN
-F 1 "RJ45" H 3755 3676 50  0000 C CNN
-F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 3700 3125 50  0001 C CNN
-F 3 "~" V 3700 3125 50  0001 C CNN
-	1    3700 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x08 J4
 U 1 1 5BD1B2F4
 P 5800 3000
@@ -51,7 +40,7 @@ $Comp
 L Connector_Generic:Conn_01x03 J6
 U 1 1 5BD1B545
 P 7700 2900
-F 0 "J6" H 7750 2950 50  0000 L CNN
+F 0 "J6" H 7800 2900 50  0000 L CNN
 F 1 "Conn_01x03" H 15980 6401 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7700 2900 50  0001 C CNN
 F 3 "~" H 15900 6450 50  0001 C CNN
@@ -94,49 +83,30 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5BD1B3BA
-P 4250 3550
-F 0 "#PWR02" H 4250 3300 50  0001 C CNN
-F 1 "GND" H 4255 3377 50  0000 C CNN
-F 2 "" H 4250 3550 50  0001 C CNN
-F 3 "" H 4250 3550 50  0001 C CNN
-	1    4250 3550
+P 4300 3600
+F 0 "#PWR02" H 4300 3350 50  0001 C CNN
+F 1 "GND" H 4305 3427 50  0000 C CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 2700 4800 2700
-Wire Wire Line
-	4100 2900 4800 2900
+	4100 2800 4800 2800
 Wire Wire Line
 	4100 3100 4800 3100
 Wire Wire Line
-	4100 3300 4800 3300
-Text Label 4600 2700 0    50   ~ 0
+	4100 3200 4800 3200
+Wire Wire Line
+	4100 3400 4800 3400
+Text Label 4600 2800 0    50   ~ 0
 DATA1
-Text Label 4600 2900 0    50   ~ 0
-DATA2
 Text Label 4600 3100 0    50   ~ 0
+DATA2
+Text Label 4600 3200 0    50   ~ 0
 DATA3
-Text Label 4600 3300 0    50   ~ 0
+Text Label 4600 3400 0    50   ~ 0
 DATA4
-Wire Wire Line
-	4250 3550 4250 3400
-Wire Wire Line
-	4250 2800 4100 2800
-Wire Wire Line
-	4250 3000 4100 3000
-Connection ~ 4250 3000
-Wire Wire Line
-	4250 3000 4250 2800
-Wire Wire Line
-	4100 3200 4250 3200
-Connection ~ 4250 3200
-Wire Wire Line
-	4250 3200 4250 3000
-Wire Wire Line
-	4250 3400 4100 3400
-Connection ~ 4250 3400
-Wire Wire Line
-	4250 3400 4250 3200
 $Comp
 L power:+5V #PWR04
 U 1 1 5BD1CC62
@@ -352,4 +322,118 @@ F 3 "~" H 5950 4850 50  0001 C CNN
 	1    5950 4850
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3700 3600
+NoConn ~ 3550 3600
+Wire Wire Line
+	4100 3300 4300 3300
+Connection ~ 4300 3300
+Wire Wire Line
+	4300 3300 4300 3600
+Wire Wire Line
+	4100 3000 4300 3000
+Connection ~ 4300 3000
+Wire Wire Line
+	4300 3000 4300 3300
+Wire Wire Line
+	4100 2900 4300 2900
+Connection ~ 4300 2900
+Wire Wire Line
+	4300 2900 4300 3000
+Wire Wire Line
+	4300 2700 4100 2700
+Wire Wire Line
+	4300 2700 4300 2900
+$Comp
+L power:+5V #PWR?
+U 1 1 5BFDCD09
+P 5000 4250
+F 0 "#PWR?" H 5000 4100 50  0001 C CNN
+F 1 "+5V" H 5015 4423 50  0000 C CNN
+F 2 "" H 5000 4250 50  0001 C CNN
+F 3 "" H 5000 4250 50  0001 C CNN
+	1    5000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BFDD80B
+P 5000 4550
+F 0 "#PWR?" H 5000 4300 50  0001 C CNN
+F 1 "GND" H 5005 4377 50  0000 C CNN
+F 2 "" H 5000 4550 50  0001 C CNN
+F 3 "" H 5000 4550 50  0001 C CNN
+	1    5000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BFDE31F
+P 5000 4400
+F 0 "C?" H 5115 4446 50  0000 L CNN
+F 1 "C" H 5115 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 4250 50  0001 C CNN
+F 3 "~" H 5000 4400 50  0001 C CNN
+	1    5000 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3250 2950 3250
+Wire Wire Line
+	2950 3250 2950 2850
+Wire Wire Line
+	2950 2850 3100 2850
+Wire Wire Line
+	3100 2750 2950 2750
+Wire Wire Line
+	2950 2750 2950 2600
+$Comp
+L power:+5V #PWR?
+U 1 1 5BFE1B5A
+P 2950 2600
+F 0 "#PWR?" H 2950 2450 50  0001 C CNN
+F 1 "+5V" H 2965 2773 50  0000 C CNN
+F 2 "" H 2950 2600 50  0001 C CNN
+F 3 "" H 2950 2600 50  0001 C CNN
+	1    2950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BFE1DAE
+P 2950 3750
+F 0 "#PWR?" H 2950 3500 50  0001 C CNN
+F 1 "GND" H 2955 3577 50  0000 C CNN
+F 2 "" H 2950 3750 50  0001 C CNN
+F 3 "" H 2950 3750 50  0001 C CNN
+	1    2950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Matthias:TE-Connectivity-406549-6 J?
+U 1 1 5BFD4914
+P 3600 3100
+F 0 "J?" H 3600 3725 50  0000 C CNN
+F 1 "TE-Connectivity-406549-6" H 3600 3634 50  0000 C CNN
+F 2 "" V 3500 3175 50  0001 C CNN
+F 3 "~" V 3500 3175 50  0001 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BFE3D98
+P 2950 3550
+F 0 "R?" H 2892 3504 50  0000 R CNN
+F 1 "270R" H 2892 3595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 3550 50  0001 C CNN
+F 3 "~" H 2950 3550 50  0001 C CNN
+	1    2950 3550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2950 3450 2950 3350
+Wire Wire Line
+	2950 3350 3100 3350
+Wire Wire Line
+	2950 3750 2950 3650
 $EndSCHEMATC
