@@ -1,0 +1,248 @@
+EESchema Schematic File Version 4
+LIBS:rj45-sk6812-adapter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:L78L05_TO92 U?
+U 1 1 5C0259C5
+P 6300 4550
+AR Path="/5C0259C5" Ref="U?"  Part="1" 
+AR Path="/5C023B47/5C0259C5" Ref="U1"  Part="1" 
+F 0 "U1" H 6300 4792 50  0000 C CNN
+F 1 "L78L05_TO92" H 6300 4701 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6300 4775 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 6300 4500 50  0001 C CNN
+	1    6300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDC #PWR?
+U 1 1 5C0259CC
+P 5650 4550
+AR Path="/5C0259CC" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C0259CC" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 5650 4450 50  0001 C CNN
+F 1 "VDC" H 5650 4825 50  0000 C CNN
+F 2 "" H 5650 4550 50  0001 C CNN
+F 3 "" H 5650 4550 50  0001 C CNN
+	1    5650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C0259D2
+P 6900 4550
+AR Path="/5C0259D2" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C0259D2" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 6900 4400 50  0001 C CNN
+F 1 "+5V" H 6915 4723 50  0000 C CNN
+F 2 "" H 6900 4550 50  0001 C CNN
+F 3 "" H 6900 4550 50  0001 C CNN
+	1    6900 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4550 6600 4550
+Wire Wire Line
+	6000 4550 5650 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5C0259DA
+P 6300 4850
+AR Path="/5C0259DA" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C0259DA" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 6300 4600 50  0001 C CNN
+F 1 "GND" H 6305 4677 50  0000 C CNN
+F 2 "" H 6300 4850 50  0001 C CNN
+F 3 "" H 6300 4850 50  0001 C CNN
+	1    6300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C0259E0
+P 7200 3250
+AR Path="/5C0259E0" Ref="C?"  Part="1" 
+AR Path="/5C023B47/5C0259E0" Ref="C3"  Part="1" 
+F 0 "C3" H 7315 3296 50  0000 L CNN
+F 1 "22uF" H 7315 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7238 3100 50  0001 C CNN
+F 3 "~" H 7200 3250 50  0001 C CNN
+	1    7200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C0259E8
+P 6450 3250
+AR Path="/5C0259E8" Ref="C?"  Part="1" 
+AR Path="/5C023B47/5C0259E8" Ref="C2"  Part="1" 
+F 0 "C2" H 6565 3296 50  0000 L CNN
+F 1 "22uF" H 6565 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6488 3100 50  0001 C CNN
+F 3 "~" H 6450 3250 50  0001 C CNN
+	1    6450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Mini J7
+U 1 1 5C02F90F
+P 5100 3200
+F 0 "J7" H 5155 3667 50  0000 C CNN
+F 1 "USB_B_Mini" H 5155 3576 50  0000 C CNN
+F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 5250 3150 50  0001 C CNN
+F 3 "~" H 5250 3150 50  0001 C CNN
+	1    5100 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 3200
+NoConn ~ 5400 3300
+NoConn ~ 5400 3400
+Wire Wire Line
+	5000 3600 5100 3600
+Wire Wire Line
+	5100 3600 5100 3750
+Connection ~ 5100 3600
+$Comp
+L power:GND #PWR014
+U 1 1 5C02F91C
+P 5100 3750
+F 0 "#PWR014" H 5100 3500 50  0001 C CNN
+F 1 "GND" H 5105 3577 50  0000 C CNN
+F 2 "" H 5100 3750 50  0001 C CNN
+F 3 "" H 5100 3750 50  0001 C CNN
+	1    5100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3000 5550 3000
+Wire Wire Line
+	5550 3000 5550 2850
+$Comp
+L power:+5V #PWR015
+U 1 1 5C02F924
+P 5550 2850
+F 0 "#PWR015" H 5550 2700 50  0001 C CNN
+F 1 "+5V" H 5565 3023 50  0000 C CNN
+F 2 "" H 5550 2850 50  0001 C CNN
+F 3 "" H 5550 2850 50  0001 C CNN
+	1    5550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5C030F95
+P 6350 1950
+F 0 "D1" H 6300 1750 50  0000 L CNN
+F 1 "D" H 6350 1850 50  0000 L CNN
+F 2 "Diode_SMD:D_MELF_Handsoldering" H 6350 1950 50  0001 C CNN
+F 3 "~" H 6350 1950 50  0001 C CNN
+	1    6350 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDC #PWR?
+U 1 1 5C031018
+P 6450 3100
+AR Path="/5C031018" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C031018" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 6450 3000 50  0001 C CNN
+F 1 "VDC" H 6450 3375 50  0000 C CNN
+F 2 "" H 6450 3100 50  0001 C CNN
+F 3 "" H 6450 3100 50  0001 C CNN
+	1    6450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C031033
+P 6450 3400
+AR Path="/5C031033" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C031033" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 6450 3150 50  0001 C CNN
+F 1 "GND" H 6455 3227 50  0000 C CNN
+F 2 "" H 6450 3400 50  0001 C CNN
+F 3 "" H 6450 3400 50  0001 C CNN
+	1    6450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 5C031E23
+P 5650 1950
+F 0 "J8" H 5570 2075 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 5730 1851 50  0001 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5650 1950 50  0001 C CNN
+F 3 "~" H 5650 1950 50  0001 C CNN
+	1    5650 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C0323A1
+P 6050 2050
+AR Path="/5C0323A1" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C0323A1" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 6050 1800 50  0001 C CNN
+F 1 "GND" H 6055 1877 50  0000 C CNN
+F 2 "" H 6050 2050 50  0001 C CNN
+F 3 "" H 6050 2050 50  0001 C CNN
+	1    6050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1950 5850 1950
+Wire Wire Line
+	5850 2050 6050 2050
+$Comp
+L power:VDC #PWR?
+U 1 1 5C0323A9
+P 6800 1950
+AR Path="/5C0323A9" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C0323A9" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 6800 1850 50  0001 C CNN
+F 1 "VDC" H 6800 2225 50  0000 C CNN
+F 2 "" H 6800 1950 50  0001 C CNN
+F 3 "" H 6800 1950 50  0001 C CNN
+	1    6800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1950 6800 1950
+$Comp
+L power:+5V #PWR024
+U 1 1 5C01C60B
+P 7200 3100
+F 0 "#PWR024" H 7200 2950 50  0001 C CNN
+F 1 "+5V" H 7215 3273 50  0000 C CNN
+F 2 "" H 7200 3100 50  0001 C CNN
+F 3 "" H 7200 3100 50  0001 C CNN
+	1    7200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C01C626
+P 7200 3400
+AR Path="/5C01C626" Ref="#PWR?"  Part="1" 
+AR Path="/5C023B47/5C01C626" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 7200 3150 50  0001 C CNN
+F 1 "GND" H 7205 3227 50  0000 C CNN
+F 2 "" H 7200 3400 50  0001 C CNN
+F 3 "" H 7200 3400 50  0001 C CNN
+	1    7200 3400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
