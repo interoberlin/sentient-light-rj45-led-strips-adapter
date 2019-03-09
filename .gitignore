@@ -3,4 +3,6 @@
 *.bak
 *.bck
 *.kicad_pcb-bak
+*-rescue.*
+
 
