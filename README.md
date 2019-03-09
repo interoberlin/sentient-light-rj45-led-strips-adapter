@@ -4,7 +4,9 @@ The adapter receives four data signals via an off-the-shelf RJ-45 ethernet socke
 and routes them to a 1x5-pin header as well as to LED strip solder pads.
 The adapter is intended for usage with strips of addressable LEDs (e.g. WS2812 or SK6812).
 
-## Design goals
+<img width=400 src="https://raw.githubusercontent.com/interoberlin/sentient-light-rj45-led-strips-adapter/master/model.jpg"/>
+
+## Original design goals
 
 * The 1x5-pin header must match the pin layout previously used in this project:
   * https://github.com/interoberlin/Baumhaus-Tree-Adapter
